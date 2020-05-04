@@ -1,0 +1,2 @@
+Readmore.js - https://github.com/jedfoster/Readmore.js
+A lightweight jQuery plugin for collapsing and expanding long blocks of text with "Read more" and "Close" links. http://jedfoster.com/Readmore.js/

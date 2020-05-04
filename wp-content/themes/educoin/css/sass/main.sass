@@ -1,0 +1,491 @@
+//@import 'compass'
+
+html 
+  margin-top: 0px !important
+
+.w-p-1
+  width: 1%
+.w-p-20
+  width: 20%
+  
+.form-control
+  *[disabled]
+    color: #bbb
+.filters
+  select, 
+  input
+    max-width: 200px
+
+body 
+  padding-top: 60px
+body.admin-bar
+  padding-top: 90px
+  .navbar.fixed-top
+    top: 34px
+    
+.hidden
+  display: none
+
+.alert[role="alert"]
+  cursor: pointer
+
+.table
+  .row
+    margin-left: 0
+    margin-right: 0
+
+.page-title 
+  font-weight: 300
+  text-align: center
+  margin-top: 60px
+  
+  display: block
+  margin-left: auto
+  margin-right: auto
+  max-width: 700px
+
+.circle-blue 
+  display: inline-block
+  border-radius: 100%
+  border: 4px solid #fff
+  background-color: #007bff
+  width: 32px
+  height: 32px
+
+.circle-green 
+  display: inline-block
+  border-radius: 100%
+  border: 4px solid #fff
+  background-color: #5cb85c
+  width: 32px
+  height: 32px
+
+.circle-red 
+  display: inline-block
+  border-radius: 100%
+  border: 4px solid #fff
+  background-color: #d9534f
+  width: 32px
+  height: 32px
+
+.circle-gray 
+  display: inline-block
+  border-radius: 100%
+  border: 4px solid #fff
+  background-color: #ccc
+  width: 32px
+  height: 32px
+  
+.details-tooltip
+  display: inline-block
+  &:after
+    content: "?"
+    border: 1px solid #000
+    line-height: 17px
+    border-radius: 4px
+    padding: 0px 4px
+    cursor: default
+    background-color: #17a2b8
+    color: #fff
+    border: 1px solid #17a2b8
+    font-weight: 500
+    
+    -webkit-transition: all .15s ease-in-out
+    -moz-transition: all .15s ease-in-out
+    -o-transition: all .15s ease-in-out
+    transition: all .15s ease-in-out
+    
+  &:hover
+    &:after
+      background-color: #117a8b
+      border-color: #10707f
+      
+.edc-double-confirm-btn
+  input[type=checkbox]
+    position: relative
+    top: 2px
+    margin-right: 4px
+  
+// tinymce editor
+.mce-tinymce
+  .mce-branding
+    display: none
+    
+// WP plugin 'Video Embed & Thumbnail Generator' video player
+.kgvid_wrapper
+  &:hover
+    .vjs-big-play-button
+      opacity: 0.6   
+  
+// alert messages
+.alert
+  margin-bottom: 0
+  display: none
+  &.alert-primary
+    display: block
+    
+// navbar
+.navbar-brand
+  position: relative
+  .user-id
+    position: absolute
+    left: 0
+    top: 31px
+    font-size: 10px
+    color: rgba(255,255,255,.5)
+    
+// main overlay
+.main-overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0px
+  left: 0px
+  z-index: 1000000
+  
+  &__overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0px
+    left: 0px
+    z-index: 0
+    background: #000
+    opacity: 0.3
+    
+  &__loader
+    position: absolute
+    bottom: 0px
+    right: 0px
+    display: block
+    width: 100px
+    height: 100px
+    transform: scale(0.6)
+    
+@keyframes ldio-5aaut65ixpj
+  0%
+    transform: rotate(0)
+
+  100%
+    transform: rotate(360deg)
+
+.ldio-5aaut65ixpj
+  div
+    box-sizing: border-box !important
+
+  > div
+    position: absolute
+    width: 88px
+    height: 88px
+    top: 6px
+    left: 6px
+    border-radius: 50%
+    border: 8px solid #000
+    border-color: #ec1e25 transparent #ec1e25 transparent
+    animation: ldio-5aaut65ixpj 2.9411764705882355s linear infinite
+
+    &:nth-child(2), &:nth-child(4)
+      width: 70px
+      height: 70px
+      top: 15px
+      left: 15px
+      animation: ldio-5aaut65ixpj 2.9411764705882355s linear infinite reverse
+
+    &:nth-child(2)
+      border-color: transparent #00599e transparent #00599e
+
+    &:nth-child(3)
+      border-color: transparent
+
+      div
+        position: absolute
+        width: 100%
+        height: 100%
+        transform: rotate(45deg)
+
+        &:before
+          content: ""
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: -8px
+          left: 32px
+          background: #ec1e25
+          border-radius: 50%
+          box-shadow: 0 80px 0 0 #ec1e25
+
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: -8px
+          left: 32px
+          background: #ec1e25
+          border-radius: 50%
+          box-shadow: 0 80px 0 0 #ec1e25
+          left: -8px
+          top: 32px
+          box-shadow: 80px 0 0 0 #ec1e25
+
+    &:nth-child(4)
+      border-color: transparent
+
+      div
+        position: absolute
+        width: 100%
+        height: 100%
+        transform: rotate(45deg)
+
+        &:before
+          content: ""
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: -8px
+          left: 23px
+          background: #00599e
+          border-radius: 50%
+          box-shadow: 0 62px 0 0 #00599e
+
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: -8px
+          left: 23px
+          background: #00599e
+          border-radius: 50%
+          box-shadow: 0 62px 0 0 #00599e
+          left: -8px
+          top: 23px
+          box-shadow: 62px 0 0 0 #00599e
+
+.loadingio-spinner-double-ring-47vm2rwi136
+  width: 100px
+  height: 100px
+  display: inline-block
+  overflow: hidden
+
+.ldio-5aaut65ixpj
+  width: 100%
+  height: 100%
+  position: relative
+  transform: translateZ(0) scale(1)
+  backface-visibility: hidden
+  transform-origin: 0 0
+    
+    
+    
+    
+    
+    
+    
+    
+  
+// main content
+body
+  & > .main-content
+    max-width: 1024px
+    padding-bottom: 20px
+    margin-left: auto
+    margin-right: auto
+    
+    .even-node-comfortable-reading
+      background: #e9ecef
+      padding: 10px
+    
+    .subtitle
+      text-align: center
+      font-size: 25px
+      font-weight: 300
+      display: block
+      margin-left: auto
+      margin-right: auto
+      max-width: 700px
+      
+    .subtitle-devider
+      margin-bottom: 45px
+      border-bottom: 1px solid #212529
+      width: 100%
+      max-width: 150px
+      margin-left: auto
+      margin-right: auto
+      
+    // styles for author of some idea, it is like Source of idea in square brackets like "...... [author]"
+    .idea-author
+      display: block
+      text-align: right
+      font-size: 10px
+      
+    .anchor
+      color: inherit
+      outline: none
+      
+      -webkit-transition: all .5s ease-in-out
+      -moz-transition: all .5s ease-in-out
+      -o-transition: all .5s ease-in-out
+      transition: all .5s ease-in-out
+      
+      &.active
+        background-color: yellow
+      
+    // list item in demo articles
+    .demo-list-item
+      padding-left: 26px
+  
+// lesson page
+.edc-course-lesson
+  .main-content
+    .lesson-description
+      text-align: center
+      font-style: italic
+      margin-top: 23px
+      max-width: 700px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0px
+      
+    .image-cont
+      display: block
+      margin-left: auto
+      margin-right: auto
+      max-width: 200px
+      max-height: 200px
+      overflow: hidden
+      text-align: center
+      
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 500px
+
+    .videos
+      font-size: 0px
+      .video-player-cont
+        width: 100%
+        max-width: 500px
+        margin-left: auto
+        margin-right: auto
+        display: block
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0px
+
+    .homework-cont
+      position: relative
+      .mce-btn-edit
+        position: absolute
+        left: 3px
+        bottom: 3px
+        button
+          padding: 1px 4px
+          line-height: 20px
+          .mce-ico
+            background-size: contain
+            background-image: url('../images/icons/pencil.png')
+          
+// lesson lists page
+.edc-lesson-lists
+  .table
+    .status-cont
+      display: block
+      position: relative
+      .is-online-event
+        font-size: 10px
+        position: absolute
+        top: -6px
+        left: -4px
+        display: block
+        background: yellow
+        transform: rotate(-21deg)  
+        cursor: default
+          
+// students in admin section page
+.edc-students-in-admin-section
+  .table
+    .blocked-user
+      color: #d6cccf
+      a
+        color: #d6cccf
+        
+// search page
+.edc-search
+  .gsc-control-wrapper-cse
+    visibility: inherit !important
+    .gsc-search-box
+      display: block !important
+    .gsc-orderby
+      .gsc-option-menu-container
+        white-space: nowrap
+    .gsc-adBlock
+      display: none
+      
+// events in admin section
+.edc-events-in-admin-section
+  .calendar-cont
+    & > iframe
+      width: 100%    
+        
+// search form in header
+.top-search-form
+  position: relative
+  height: 100%
+  .input-search
+    padding-right: 37px
+  .btn-search
+    position: absolute
+    display: block
+    width: 20px
+    height: 20px
+    background: transparent
+    border: 0
+    outline: 0
+    right: 10px
+    top: 10px
+    
+    &:before
+      position: absolute
+      top: 0px
+      left: 0px
+      z-index: 20
+      font: normal 20px/1 dashicons!important
+      content: "\f179"
+      speak: none
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+    
+// accordion styles
+.accordion>.card .card-header
+  margin-bottom: 0px !important
+.accordion>.card .collapse>.card-body
+  border-bottom: 1px solid rgba(0,0,0,.125) !important
+.card.border-secondary:before,
+.card.border-primary:before,
+.card.border-success:before
+  display: block
+  width: 2px
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  content: " "
+.card.border-secondary:before
+  background: #6c757d
+.card.border-primary:before
+  background: #007bff
+.card.border-success:before
+  background: #28a745
+  
+  
+  
+@import 'wp-login'
+@import 'animations'
+@import 'responsive'

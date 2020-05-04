@@ -1,0 +1,1 @@
+"PHP QR Code" - Generating QR code - https://sourceforge.net/projects/phpqrcode/

@@ -1,0 +1,1 @@
+<?php echo edc_get_breadcrumbs(); ?>
