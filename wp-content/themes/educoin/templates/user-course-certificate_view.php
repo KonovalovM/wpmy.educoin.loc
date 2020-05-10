@@ -62,8 +62,8 @@
                       // generate QR-code
                       require_once( get_template_directory() . '/inc/vendors/phpqrcode/qrlib.php' );
                       // define temporary directories
-                      $temp_dir = get_template_directory() . '/temp/';
-                      $temp_dir_url = get_template_directory_uri() . '/temp/';
+                      $temp_dir = get_template_directory() . '/temp/certificates';
+                      $temp_dir_url = get_template_directory_uri() . '/temp/certificates';
                       // forming QR-code content
                       $qr_code_content = get_permalink() . '?uid=' . $certificate['uid'];
                       // generating QR-code
@@ -124,7 +124,11 @@
                                     <td class=""><?=html_entity_decode( $certificate['comments'] )?></td>
                                 </tr>
                             <?php } ?>
-                       
+                            <tr>
+                                <th scope="row" class="w-p-20"><?=edc__( 'Скачать сертификат' )?></th>
+                                <td class=""><a href="<?php echo esc_url( add_query_arg( 'pdf', $post->ID ) );?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'СЕРТИФИКАТ' )?></a></td>
+                            </tr>
+
                         </tbody>   
                     </table>
 

@@ -6653,4 +6653,46 @@ function edc_personal_development_add_value_to_column( $name, $post_id ) {
         if ( $post_meta ) echo $post_meta;
     }
 }
-    
+
+
+
+
+
+//generate to PDF
+if ( ! class_exists( 'EDCPDF' ) ) {
+
+	final class EDCPDF {
+
+		private static $instance;
+
+		public static function instance() {
+
+				self::$instance = new EDCPDF;
+
+				self::$instance->setup_constants();
+
+				self::$instance->includes();
+		}
+
+		private function setup_constants() {
+
+            define( 'EDCPDF_DIR', plugin_dir_path( __FILE__ ) );
+            define( 'CACHE_DIR', WP_CONTENT_DIR . '/themes/educoin/temp/certificates/');
+		}
+
+		private function includes() {
+			// functions
+			require_once EDCPDF_DIR . 'pdf/edcpdf-functions.php';
+
+			// template
+			require_once EDCPDF_DIR . 'pdf/edcpdf-template-loader.php';
+		}
+	}
+}
+
+function EDCPDF() {
+
+		return EDCPDF::instance();
+}
+
+EDCPDF();

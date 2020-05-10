@@ -1,4 +1,4 @@
-<?php
+f<?php
 
     global $tmpl_vars;
             

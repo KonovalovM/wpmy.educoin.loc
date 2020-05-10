@@ -144,13 +144,18 @@
 
 											  <?php if ( !$data_is_user_can_view_course_certificate['result'] ) { ?>    
 													  <button class="btn btn-secondary btn-sm" data-toggle="tooltip" title="<?=$data_is_user_can_view_course_certificate['message']?>"><?=edc__( 'Посмотреть' )?></button>
+
 											  <?php } else { ?>      
 													  <a href="<?=$url_view_certificate?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'Посмотреть' )?></a>
+													  <a href="<?php echo esc_url( add_query_arg( 'pdf', $post->ID ) );?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'СЕРТИФИКАТ' )?></a>
 											  <?php } ?>   
+
 
 										  </td>
 										</tr>
-									  <?php } ?>
+									  <?php }
+
+                                        ?>
 
 									</tbody>   
 								  </table>
