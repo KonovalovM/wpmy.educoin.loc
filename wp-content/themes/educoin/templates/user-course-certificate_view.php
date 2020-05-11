@@ -126,9 +126,14 @@
                             <?php } ?>
                             <tr>
                                 <th scope="row" class="w-p-20"><?=edc__( 'Скачать сертификат' )?></th>
-                                <td class=""><a href="<?php echo esc_url( add_query_arg( 'pdf', $post->ID ) );?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'СЕРТИФИКАТ' )?></a></td>
+                                <td class=""><a href="http://wpmy.educoin.loc/wp-content/themes/educoin/temp/certificates/<?php echo $_GET['uid'] ?>.pdf" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'СКАЧАТЬ' )?></a></td>
                             </tr>
-
+                            <?php if ( $certificate['user_id'] == get_current_user_id() ) {;?>
+                            <tr>
+                                <th scope="row" class="w-p-20"><?=edc__( 'Генерация сертификата' )?></th>
+                                <td class=""><a href="<?php echo esc_url( add_query_arg( 'pdf', $post->ID ) );?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'Пересобрать' )?></a></td>
+                            </tr>
+                             <?php } ?>x`
                         </tbody>   
                     </table>
 

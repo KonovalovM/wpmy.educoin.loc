@@ -147,7 +147,6 @@
 
 											  <?php } else { ?>      
 													  <a href="<?=$url_view_certificate?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'Посмотреть' )?></a>
-													  <a href="<?php echo esc_url( add_query_arg( 'pdf', $post->ID ) );?>" target="_blank" class="btn btn-success btn-sm"><?=edc__( 'СЕРТИФИКАТ' )?></a>
 											  <?php } ?>   
 
 
