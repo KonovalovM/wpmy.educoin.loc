@@ -12,6 +12,9 @@
       ];
       $certificate = edc_get_user_course_certificates( $query_arr )[0];
   }
+//$new_url = 'http://wpmy.educoin.loc/view-user-course-cert/?uid=f910a8718748457e677c7061686ef1f0&pdf=936';
+//$new_url();
+
 ?>
 
 <?php get_header() ?>

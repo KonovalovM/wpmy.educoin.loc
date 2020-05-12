@@ -62,6 +62,7 @@
               
             <br>
             <br>
+
             <?=$tmpl_vars['lesson_content']?>
             
             <!-- Content for supports -->
@@ -124,6 +125,10 @@
                             <label for="homework"><?=edc__( 'Пропиши здесь результаты выполненных задач:' )?></label>
                             <div class="homework-cont">
                                 <textarea id="homework" class="advanced form-control" id="homework" rows="5" name="homework" <?=$disabled?>><?=html_entity_decode( $tmpl_vars['lesson_progress']['homework'] )?></textarea>                            
+                            </div>
+                            <label for="homework"><?=edc__( 'Опиши здесь свои инсайты:' )?></label>
+                            <div class="homework-cont">
+                                <textarea id="homework" class="advanced form-control" id="homework" rows="5" name="homework" <?=$disabled?>><?=html_entity_decode( $tmpl_vars['lesson_progress']['insight'] )?></textarea>
                             </div>
                         </div>
                     </div>
